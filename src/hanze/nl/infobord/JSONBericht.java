@@ -1,7 +1,5 @@
 package hanze.nl.infobord;
 
-//import hanze.nl.tijdtools.InfobordTijdFuncties;
-
 public class JSONBericht {
 	private int tijd;
 	private int aankomsttijd;
@@ -73,8 +71,6 @@ public class JSONBericht {
 	}
 
 	public String getInfoRegel() {
-//		InfobordTijdFuncties tijdFuncties = new InfobordTijdFuncties();
-//		String tijd = tijdFuncties.getFormattedTimeFromCounter(aankomsttijd);
 		String tijd = "" + aankomsttijd;
 		String regel = String.format("%8s - %5s - %12s", this.lijnNaam, this.eindpunt, tijd);
 		return regel;
